@@ -14,7 +14,7 @@ Make sure you have the following libraries installed before running the code:
 You can install these libraries using `pip`:
 
 ```bash
- pip install pymongo marshmallow python-dotenv openai
+pip install pymongo marshmallow python-dotenv openai
 ```
 
 # Configuration ⚙
@@ -26,7 +26,7 @@ Create a .env file: Create a file named .env in your project directory and defin
 Once you've set up your environment, you can run the provided Python script with the following command:
 
 ```bash
-    python main.py
+python main.py
 ```
 
 

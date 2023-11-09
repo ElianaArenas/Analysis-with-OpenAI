@@ -16,9 +16,17 @@ data_cursor = db.inventario.find()
 
 data_list = list(data_cursor)
 
-prompt = f"""
-    Take this data and give me an explanation and analysis from it.
+while True:
+    message = input("Escribe tu prompt ✍  (o 'salir' ❌ para terminar):")
+
+    if message.lower() == 'salir':
+        print("Saliendo del programa. ¡Hasta luego! 👋")
+        break 
+
+    prompt = f"""
+     {message}
     ```{data_list}```
     """
-response = get_completion(prompt)
-print(response)
+    response = get_completion(prompt)
+    print(response)
+ 
